@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+.bigfirst{
+    background-color: blue;
+    height: 50%;
+}
+.second, .third{
+    height: 25%;
+    display: flex;.
+    width: 50%;
+}
+.secondone{
+    width: 50%;
+    background-color: green;
+}
+.secondtwo{
+    width: 50%;
+    background-color: yellow;
+}
+.thirdone{
+    width: 50%;
+    background-color: rebeccapurple;
+}
+.thirdsecond{
+    width: 50%;
+    background-color: orange;
+}
+
+@media (min-width: 768px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .bigfirst{
+        height: 100%;
+        width: 50%;
+    }
+   .second, .third{
+       height: 50%;
+       width: 50%;
+   }
+
+}
