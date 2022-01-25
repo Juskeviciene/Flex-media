@@ -5,48 +5,46 @@
 .container{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
 }
-.bigfirst{
+.first{
     background-color: blue;
     height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.second, .third{
-    height: 25%;
-    display: flex;.
-    width: 50%;
+.second{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
-.secondone{
+.second div{
+    height: 50%;
     width: 50%;
-    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.secondtwo{
-    width: 50%;
-    background-color: yellow;
-}
-.thirdone{
-    width: 50%;
-    background-color: rebeccapurple;
-}
-.thirdsecond{
-    width: 50%;
+.second div:nth-child(1){
     background-color: orange;
 }
-
-@media (min-width: 768px) {
+.second div:nth-child(2){
+    background-color: rgb(0, 255, 0);
+}
+.second div:nth-child(3){
+    background-color: rgb(68, 0, 255);
+}
+.second div:nth-child(4){
+    background-color: rgb(192, 36, 36);
+}
+@media  screen and (min-width: 768px) {
     .container{
-        flex-wrap: wrap;
+        display: flex;
     }
-    .bigfirst{
+    .first, .second{
         height: 100%;
         width: 50%;
+        color: white;
     }
-   .second, .third{
-       height: 50%;
-       width: 50%;
-   }
-
 }
